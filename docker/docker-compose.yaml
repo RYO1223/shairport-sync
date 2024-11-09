@@ -12,7 +12,7 @@ services:
     devices:
       - "/dev/snd" # ALSA device, omit if using PulseAudio
     command: [
-      "--", "-d", "hw:0"
+      "--", "-d", "hw:2"
     ]
     # volumes:
     #   - ./volumes/shairport-sync/shairport-sync.conf:/etc/shairport-sync.conf # Customised Shairport Sync configuration file.
