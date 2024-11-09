@@ -11,6 +11,9 @@ services:
     #  PULSE_COOKIE: /tmp/pulseaudio.cookie # Path for PulseAudio cookie
     devices:
       - "/dev/snd" # ALSA device, omit if using PulseAudio
+    command: [
+      "--", "-d", "hw:0"
+    ]
     # volumes:
     #   - ./volumes/shairport-sync/shairport-sync.conf:/etc/shairport-sync.conf # Customised Shairport Sync configuration file.
     #   - /run/user/1000/pulse/native:/tmp/pulseaudio.socket # PulseAudio socket when using that backend
